@@ -48,19 +48,14 @@ export default function router(URI) {
         },
         '/users': {
             returnView: UserIndex,
-            state: {
-                users: "/api/users/me"
-            },
+            state: {},
             uri: "/users",
             title: 'User Info',
             viewEvent: UserEvents
         },
         '/posts': {
             returnView: PostIndex,
-            state: {
-                posts: '/api/posts',
-                categories: '/api/categories'
-            },
+            state: {},
             uri: '/posts',
             title: 'All Posts',
             viewEvent: PostEvents
@@ -87,7 +82,4 @@ export default function router(URI) {
     };
 
     return routes[URI];
-
-    // if uri looks like /users/1
-
 }
