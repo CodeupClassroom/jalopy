@@ -1,4 +1,3 @@
-import {showNotification} from "../messaging.js";
 import {getUser} from "../auth.js";
 
 const BASE_URI = `${BACKEND_HOST}/api/s3/download`;
@@ -6,12 +5,13 @@ const BASE_URI = `${BACKEND_HOST}/api/s3/download`;
 export default function Home(props) {
     return `
         <header>
-            <h1>Home Page</h1>
+            <h1>Hello Jalopy</h1>
         </header>
         <main>
             <div>
+                <img src="assets/jalopy.jpeg" />
                 <p>
-                    This is the home page text.
+                    
                 </p>    
             </div>
         </main>
@@ -19,12 +19,4 @@ export default function Home(props) {
 }
 
 export function HomeEvents() {
-    // TODO: use an enum for message type
-    // const authority = getUserRole();
-    const user = getUser();
-    if(!user) {
-        showNotification("Welcome visitor", "secondary");
-    } else {
-        showNotification("Welcome " + user.userName, "info");
-    }
 }
