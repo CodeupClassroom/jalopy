@@ -32,13 +32,13 @@ export default function Register(props) {
 export function RegisterEvent(){
     console.log("am I logged in ? " + isLoggedIn());
 
-    $("#register-btn").click(function(){
+    document.querySelector("#register-btn").addEventListener("click", function(){
 
         // make a new user object from the provided fields
         let newUser = {
-            username: $("#username").val(),
-            email: $("#email").val(),
-            password: $("#password").val()
+            username: document.querySelector("#username").value,
+            email: document.querySelector("#email").value,
+            password: document.querySelector("#password").value
         }
 
         console.log(newUser);
@@ -56,5 +56,5 @@ export function RegisterEvent(){
                 createView("/");
             })
 
-    })
+    });
 }
