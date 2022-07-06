@@ -1,3 +1,3 @@
 # Jalopy
 
-Jalopy is a toy SPA framework for Codeup Webdev v3 students.
+Jalopy is a tiny (toy) SPA framework for Codeup Webdev v3 students.
