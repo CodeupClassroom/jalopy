@@ -8,9 +8,6 @@ export default function Navbar(props) {
         <nav>
             <a class="jalopy-nav" href="/" data-link>Home</a>`;
 
-    // everyone can see posts
-    html = html + `<a class="jalopy-nav" href="/posts" data-link>Posts</a>`;
-
     // everyone can see about
     html = html + `<a class="jalopy-nav" href="/about" data-link>About</a>`;
 

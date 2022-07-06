@@ -109,6 +109,10 @@ export function getUserRole() {
 }
 
 export async function removeStaleTokens() {
+    if(SKIP_STALE_TOKEN_CHECK) {
+        return;
+    }
+
     console.log("Removing stale tokens...");
 
     // clear tokens from localStorage if backend tells us the tokens are invalid

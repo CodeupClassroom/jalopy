@@ -1,5 +1,4 @@
 import Home, {HomeEvents} from "./views/Home.js";
-import PostIndex from "./views/PostIndex.js";
 import About, {AboutEvents} from "./views/About.js";
 import Error404 from "./views/Error404.js";
 import Loading from "./views/Loading.js";
@@ -7,7 +6,6 @@ import Login from "./views/Login.js";
 import LoginEvent from "./auth.js";
 import Register from "./views/Register.js"
 import {RegisterEvent} from "./views/Register.js";
-import {PostEvents} from "./views/PostIndex.js";
 import UserIndex, {UserEvents} from "./views/User.js";
 import Logout, {LogoutEvents} from "./views/Logout.js";
 
@@ -52,13 +50,6 @@ export default function router(URI) {
             uri: "/users",
             title: 'User Info',
             viewEvent: UserEvents
-        },
-        '/posts': {
-            returnView: PostIndex,
-            state: {},
-            uri: '/posts',
-            title: 'All Posts',
-            viewEvent: PostEvents
         },
         '/about': {
             returnView: About,

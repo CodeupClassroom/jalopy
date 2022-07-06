@@ -11,7 +11,7 @@ function loadViewOnPageRequest() {
     window.addEventListener('DOMContentLoaded', function() {
         //TODO: Switched to location.pathname so the route would be accurate to current view
         createView(location.pathname);
-        document.querySelector("footer").innerText = "Version " + FRONTEND_VERSION;
+        document.querySelector("footer").innerText = "Made with Jalopy. Version " + FRONTEND_VERSION;
     });
 }
 
