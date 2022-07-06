@@ -21,21 +21,6 @@ export default function UserIndex(props) {
                 <input id="new-password" name="new-password" type="password" value="this is not your real password"/><br>
                 <button id="change-password-button" type="button">Change Password</button>
             </form>
-            <hr>
-            <h5>My Posts</h5>
-            ${props.users.posts.map(post => {
-                return `
-<div class="card">
-  <div class="card-header">
-    ${post.title}
-  </div>
-  <div class="card-body">
-    <blockquote class="blockquote mb-0">
-      <p>${post.content}</p>
-    </blockquote>
-  </div>
-</div>`
-    }).join('')}
         </main>
     `;
 }
