@@ -1,0 +1,9 @@
+#jalopy-img {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#img-container {
+    display: flex;
+    justify-content: center;
+}
