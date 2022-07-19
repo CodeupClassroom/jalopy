@@ -72,5 +72,10 @@ export default function router(URI) {
         }
     };
 
+    // if we see a URI with index.html then interpret that as a route for /
+    if(URI.indexOf("index.html") > -1) {
+        URI = "/";
+    }
+
     return routes[URI];
 }
